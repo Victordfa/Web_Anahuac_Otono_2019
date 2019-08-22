@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+body{
+    background-color: aqua;
+}
+#container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(224, 164, 127);
+    padding: 1em;
+}
+h1{
+    font-family: 'Libre Franklin', sans-serif;
+    border-bottom: black 10px solid;
+}
+.rojo {
+    color: red;
+}
+article{
+    border: solid 4px black;
+    padding: 1rem;
+}
+.primero {
+    margin: 10px 30px 40px 150px;
+    background-color: wheat;
+    padding: 1rem
+}
