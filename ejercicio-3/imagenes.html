@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagenes</title>
+    <style>
+    .container{
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: 
+        "h h h h"
+        "s s s s"
+        "f f f f"
+    }
+    header {
+        grid-area: h;
+        background-color: yellow;
+
+    }
+    section {
+        grid-area: s;
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        grid-area: f;
+        background-color: rgb(46, 80, 10);
+    }
+    h1, p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: brown;
+        padding: 2rem;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+                <header>
+                    <h1>Imagenes responsivas</h1>
+                    <p>Se requiere en la etiqueta, el atributo media y srcset.</p>
+                </header>
+                <section>
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="img/comp_cv-original.jpg">
+                        <source media="(min-width: 460px)" srcset="img/comp_cv-media.jpg">
+                        <source media="(min-width: 0px)" srcset="img/comp_cv-tb.jpg">
+                        <img src="img/comp_cv-original.jpg" alt="Composición Geométrica prrona">
+                    </picture>
+                </section>
+                <footer></footer>
+        </div>
+</body>
+</html>
