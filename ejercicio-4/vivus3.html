@@ -8,19 +8,18 @@
 </head>
 <body>
     <style>
-    object {
-        height: 95vh;
+    section {
+        width: 40vw;
     }
     </style>
     <div class="container">
         <section>
-            <object id="my-svg" type="image/svg+xml" data="images/low_poly_langosta.svg"></object>
-            <script type="text/javascript" src="js/vivus.js"></script>
-            <script>
-                const myVivus = new Vivus('my-svg');
-                myVivus.play(1, function() {
-                });
-            </script>
+            <div id="ilustracion"> </div>
+        <script type="text/javascript" src="js/vivus.js"></script>
+
+        <script>
+            new Vivus('ilustracion', {duration: 250, type:'oneByOne', file: 'images/low_poly_rhino.svg'},);
+        </script>
         </section>
 
 
