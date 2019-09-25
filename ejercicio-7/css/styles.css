@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(../images/haiti.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 110px;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none;
+}
+footer {
+    color: white;
+}
