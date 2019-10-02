@@ -93,18 +93,6 @@ nav ul li a{
     font-family: 'Raleway', sans-serif;
     text-decoration:none;
 }
-#overlayText {
-    position:absolute;
-     top:30%;
-     left:20%;
-     z-index:1;
-   }
-   
-   #topText {
-     color: white;
-     font-size: 20px;
-     align-self: center;
-   }
 footer {
     color: white;
 }
